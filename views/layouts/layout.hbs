@@ -3,16 +3,11 @@
   <head>
     <title>{{title}}</title>
    
-{{!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> --}}
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-    {{!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-     crossorigin="anonymous"> --}}
      <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='stylesheet' href='/stylesheets/admin.css' />
-    {{!-- <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css" /> --}}
-    {{!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> --}}
   </head>
   <body>
     {{> header }}
@@ -55,71 +50,10 @@ function run(e){
 }
 
   </script>
- {{!-- <script>
-  	function locate(event){
-      
-  		var y=event.clientX-window.innerHeight/2 + window.scrollY;
-  		var x=event.clientY-window.innerWidth/2;
-  		var	z=document.getElementsByClassName("pic");
-      
-      var i;
-      for (i = 0; i < z.length; i++) {
-        var n  = z[i].className.split(' ')[1];
-        z[i].style.transform="  translate(" + -(y/window.innerHeight/2)*40*n +"vh , "+ -(x/window.innerWidth/2)*40*n +"vw )";
-        n=0;
-        
-      }
-  	}
-  	
-  	</script> --}}
-    	<!-- Scripts -->
-    {{!-- <script
-    src="https://code.jquery.com/jquery-1.12.4.min.js"
-    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-    crossorigin="anonymous"></script>
-     
-    
-    <script>
-
-// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
-    document.getElementById("navbar").style.padding = "20px 10px";
-    document.getElementById("logo").style.fontSize = "25px";
-  } else {
-    document.getElementById("navbar").style.padding = "60px 10px";
-    document.getElementById("logo").style.fontSize = "35px";
-  }
-}
-
-</script>
+ 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
 </script> 
-    <script>
-function locate(event){
-	var x=event.clientX-window.screen.availWidth/10;
-	var y=event.clientY-window.screen.availHeight/10;
-  var z =	document.getElementsByClassName("pic");
-
-var i;
-for(i=0;i<z.length;i++){
-z[i].style.transform="  rotateX(" + -(y/window.screen.availHeight/2)*5 + "deg) rotateY(" + (x/window.screen.availWidth/2)*5 + "deg)";
-}
-}
-function click(event){
-	//document.getElementById('inner').style.font-size=" 60px ";
-}
-</script>
- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
-     crossorigin="anonymous"></script>
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> --}}
-
   </body>
 </html>

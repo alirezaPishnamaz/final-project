@@ -6,16 +6,8 @@ var Cart = require('../models/cart');
 
 
 /* GET home page. */
-router.get('', function(req, res) {
-//   Product.find((err , docs)=>{
-//     var productChunks = []
-//     var chunkSize = 3
-//     for (var i = 0 ; i < docs.length ; i+= chunkSize) {
-//       productChunks.push(docs.slice( i , i + chunkSize))
-//     }
-//   res.render('../views/shop/index.hbs', { title:'hello there'},{products : productChunks});
-//   }) 
-  
+router.get('/', function(req, res) {
+
   Product.find({}).then((products)=>{
     var productChunks = []
         var chunkSize = 3
@@ -34,12 +26,12 @@ router.get('/add-to-cart/:id',(req, res, next)=>{
   var cart = new Cart(req.session.cart ? req.session.cart : { item : {}})
   Product.findById(productId, function(err , product){
     if(err){
-      return res.redirect('')
+      return res.redirect('/')
     }
     cart.add(product, product.id)
     req.session.cart = cart
     console.log(req.session.cart)
-    res.redirect('')
+    res.redirect('/')
   })
 })
 router.get('/shopping-cart' , (req , res , next)=>{

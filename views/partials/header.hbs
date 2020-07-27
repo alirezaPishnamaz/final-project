@@ -1,38 +1,3 @@
-{{!-- <nav class="navbar  navbar-expand-lg navbar-light bg-light" style="position: relative;">
-  <div class="navbar-nav mr-auto">
-    <a class="navbar-brand" href="/">cheldookht</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  </div>
-  <div class="collapse navbar-collapse " id="navbarSupportedContent">
-    <ul class="nav navbar-nav navbar-right">
-      <li class="nav-item">
-        <a class="nav-link" href="/shopping-cart/">
-          <i class="fa fa-shopping-cart"></i>shoping cart
-          <span class="badge">{{session.cart.totalQty}}</span>
-          </a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fa fa-user"></i> user managment
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          {{#if login}}
-            <a class="dropdown-item" href="/user/profile">user acount</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="/user/logout">logout</a>
-            {{ else }}
-              <a class="dropdown-item" href="/user/signup">signup</a>
-              <a class="dropdown-item" href="/user/signin">signin</a>
-          {{/if}} 
-        </div>
-      </li>
-    </ul>
-  </div>
-</nav> --}}
-
-
     
    <div class="sidenav" >
      <div class="user" id="user" style="z-index: 22;" onclick="run(event)">
@@ -54,13 +19,11 @@
      </div>
      {{/if}} 
 
-    
-       <img onclick="location.href='';" src="https://img.apksum.com/7d/com.app/2.1.5.6/icon.png" alt="">
-         
+       <img onclick="location.href='/';" src="https://img.apksum.com/7d/com.bazaar.app/2.1.5.6/icon.png" alt="">         
+     
      <div class="shop">
        <a href="/shopping-cart/"><img src="https://www.pinclipart.com/picdir/big/179-1792672_shopping-clip-art-black-and-white.png" alt=""><span class="badge">{{session.cart.totalQty}}</span></a>
      </div>
-{{!-- <i class="fa fa-shopping-cart"></i> --}}
    </div>
 
      

@@ -22,9 +22,7 @@ router.get('/signup',(req , res)=>{
     var messages = req.flash('error')
     res.render('users/signup',{csrfToken : req.csrfToken() , messages , hasError : messages.length > 0 })
   })
-  // router.post('/user/signup',(req , res)=>{
-  //   res.redirect('/')
-  // })
+
   router.post('/signup', passport.authenticate('local.signup', {
     failureRedirect:'/user/signup',
     failureFlash:true
@@ -47,9 +45,6 @@ router.get('/signup',(req , res)=>{
   })
   
  
-  // router.post('/user/signup',(req , res)=>{
-  //   res.redirect('/')
-  // })
   router.post('/signin', passport.authenticate('local.signin', {
     failureRedirect:'/user/signin',
     failureFlash:true
