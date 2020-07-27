@@ -1,0 +1,1 @@
+var stripe = Stripe('pk_test_JyFmcOpTmpnkEwoDYHjjIv4o00DKcof3Ih');
