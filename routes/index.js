@@ -6,7 +6,7 @@ var Cart = require('../models/cart');
 
 
 /* GET home page. */
-router.get('/', function(req, res) {
+router.get('/bazzar', function(req, res) {
 //   Product.find((err , docs)=>{
 //     var productChunks = []
 //     var chunkSize = 3
@@ -39,7 +39,7 @@ router.get('/add-to-cart/:id',(req, res, next)=>{
     cart.add(product, product.id)
     req.session.cart = cart
     console.log(req.session.cart)
-    res.redirect('/')
+    res.redirect('/bazzar')
   })
 })
 router.get('/shopping-cart' , (req , res , next)=>{

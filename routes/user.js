@@ -11,10 +11,10 @@ router.get('/profile',isLogedIn , (req , res)=>{
 
 router.get('/logout',isLogedIn,(req, res)=>{
     req.logOut()
-    res.redirect('/')
+    res.redirect('/bazzar')
 })
 
-router.use('/', notLogedIn , function(req, res, next){
+router.use('/bazzar', notLogedIn , function(req, res, next){
     next()
 })
 
@@ -78,7 +78,7 @@ function isLogedIn(req , res , next){
     if(req.isAuthenticated()){
         return next()
     }
-    res.redirect('/')
+    res.redirect('/bazzar')
 }
 
 function notLogedIn(req , res , next){
@@ -86,5 +86,5 @@ function notLogedIn(req , res , next){
     if(!req.isAuthenticated()){
         return next()
     }
-    res.redirect('/')
+    res.redirect('/bazzar')
 }
