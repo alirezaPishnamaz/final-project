@@ -18,10 +18,10 @@ router.post('/seller',(req , res )=>{
       return(err)
   }
   if(seller){
-      var message=[]
-      message.push('company is already in used')
-      console.log(message)
-      res.render('users/seller',{ message , hasError : message.length > 0 })
+      var messages=[]
+      messages.push('company is already in used')
+      console.log(messages)
+      res.render('users/seller',{ messages , hasError : messages.length > 0 })
   }
   else
   {

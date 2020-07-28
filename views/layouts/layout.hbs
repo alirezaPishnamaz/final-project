@@ -18,17 +18,15 @@
   		var y=event.clientX-window.screen.availWidth/2;
   		var x=event.clientY-window.screen.availHeight/2+window.scrollY;
   		var	z=document.getElementsByClassName("menarjonboun");
-    var i;
-    for (i = 0; i < z.length; i++) {
-      var n  = z[i].className.split(' ')[1];
-      z[i].style.transform="  translate(" + -(y/window.screen.availHeight/2)*100*n +"px , "+ -(x/window.screen.availWidth/2)*100*n +"px )";
-n=0;
-    }
+      var i;
+      for (i = 0; i < z.length; i++) {
+        var n  = z[i].className.split(' ')[1];
+        z[i].style.transform="  translate(" + -(y/window.screen.availHeight/2)*100*n +"px , "+ -(x/window.screen.availWidth/2)*100*n +"px )";
+        n=0;
+      }
 
   	}
-  	function click(event){
-  		//document.getElementById('inner').style.font-size=" 60px ";
-  	}
+
   	</script>
   
   	

@@ -1,18 +1,56 @@
+*{
+  font-family: cursive;
+}
+.main{
+   display: contents;
+}
+
+@media (max-width: 1440px){
 .kala{
   transition: width 0.5s ease-in-out;
     margin: 25px 10px;
-    width: 25%;
     display: inline-block;
+    width: 20%;
     /* border: black solid; */
     vertical-align: top;
     text-align: center;
     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 20px;
 }
-.kala:hover{
+  .kala:hover{
   width: 27%;
   height: 27%;
 }
+}
+
+@media (max-width: 1024px){
+  .kala{
+      width:27%;
+  }
+  .kala:hover{
+    width: 30%;
+    height: 30%;
+  }
+}
+@media (max-width: 768px){
+  .kala{
+      width:40%;
+  }
+  .kala:hover{
+    width: 45%;
+    height: 45%;
+  }
+}
+@media (max-width: 320px){
+  .kala{
+      width:80%;
+  }
+  .kala:hover{
+    width: 90%;
+    height: 90%;
+  }
+}
+
 .picture{
   margin: 0 auto;
 width: 98%;
@@ -103,6 +141,8 @@ body{
   margin-top: 1%;
   display: inline-block;
   cursor: pointer;
+  position: fixed;
+  z-index: 66;
 }
 @media (max-width: 160px){
   .sidenav div{
@@ -134,6 +174,7 @@ body{
   width: 50px;
   height: 50px;
   opacity: .6;
+  z-index: 2;
 }
 .shop span{
   position: absolute;
